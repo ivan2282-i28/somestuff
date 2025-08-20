@@ -6,7 +6,7 @@
     <title>MaxPatched WebView</title>
 </head>
 <body>
-<h1><img src="big-logo.png" height="25px" width="25px"/>MaxPatched v1.0.1</h1>
+<h1><img src="big-logo.png" height="25px" width="25px"/>MaxPatched <a id="version">UNKNOWN</a></h1>
 <a>ТГК: <a style="text-decoration: underline; text-decoration-color: aquamarine;" href="https://t.me/i28PatcherMan">@i28PatcherMan</a><br>
 Спасибо что выбрали мод от i28PatcherMan<br></a>
 <br><h3>Действия:</h3>
@@ -14,9 +14,16 @@
     <li><a href="https://help.max.ru/"> Оригинальная страница помощи MAX </a><br></li>
     <li><a href="https://ivan2282-i28.github.io/penisbrowser/"> Режим браузера </a><br></li>
     <li><a href="maxpatch/windows.html"> Запустить Windows</a><br></li>
+    <li><a href="maxpatch/badapple.html"> BadApple</a><br></li>
+    <li><a href="maxpatch/xmusic.html"> XMusic</a><br></li>
+    <li><a href="maxpatch/test.html"> BrowserTest</a><br></li>
 </ul>
 </body>
-
+<script>
+    const queryString = window.location.search;
+    const params = new URLSearchParams(queryString);
+    if (params.get("version") != null) { document.getElementById("version").innerText=params.get("version")}
+</script>
 <style>
     body{
         background-color: #0f9caf;
